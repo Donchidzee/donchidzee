@@ -3,8 +3,9 @@ name: Generate README
 on:
   push:
     branches: [main]
-    paths: ['readme.source.md']
+    paths: ['readme.source.md', '.github/workflows/readme-aura.yml']
   schedule:
+    # Refresh the live "Total Contributions" number once a day (06:00 UTC).
     - cron: '0 6 * * *'
   workflow_dispatch:
 
@@ -17,7 +18,45 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate README
-        uses: collectioneur/readme-aura@main
+      - uses: actions/setup-node@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          node-version: 20
+
+      # Pull the live all-time contribution count for @Donchidzee.
+      - name: Fetch live total contributions
+        id: contrib
+        run: |
+          JSON=$(curl -sf "https://streak-stats.demolab.com/?user=Donchidzee&type=json" || true)
+          NUM=$(printf '%s' "$JSON" | jq -r '.totalContributions // empty')
+          if [ -z "$NUM" ]; then
+            echo "Could not fetch contributions; leaving README unchanged."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          FORMATTED=$(python3 -c "import sys; print(f'{int(sys.argv[1]):,}')" "$NUM")
+          echo "total=$FORMATTED" >> "$GITHUB_OUTPUT"
+          echo "ok=true" >> "$GITHUB_OUTPUT"
+          echo "Total contributions: $FORMATTED"
+
+      # Inject the number into the card, render, then restore the placeholder
+      # so the committed source stays clean and reproducible.
+      - name: Build README with live number
+        if: steps.contrib.outputs.ok == 'true'
+        run: |
+          sed -i "s/__TOTAL_CONTRIBUTIONS__/${{ steps.contrib.outputs.total }}/g" readme.source.md
+          rm -f .github/assets/*.svg
+          npx --yes readme-aura@1.0.10 build --github-user Donchidzee
+          git checkout -- readme.source.md
+
+      - name: Commit if changed
+        if: steps.contrib.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A README.md .github/assets
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Refresh README (live total contributions)"
+            git push
+          fi

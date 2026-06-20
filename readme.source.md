@@ -467,7 +467,7 @@
     <span style={{
       fontSize: 66, fontWeight: 800, letterSpacing: -2, lineHeight: 1, color: '#ffffff',
       textShadow: '0 0 50px rgba(0,229,255,0.35), 0 0 100px rgba(139,92,246,0.2)'
-    }}>1,626</span>
+    }}>__TOTAL_CONTRIBUTIONS__</span>
 
     <span style={{ fontSize: 13, color: 'rgba(180,190,255,0.55)', fontFamily: 'monospace', letterSpacing: 0.5, marginTop: 14 }}>
       {'>'} Feb 23, 2019 to Present
