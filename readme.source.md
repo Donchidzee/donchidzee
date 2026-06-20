@@ -134,7 +134,7 @@
 <!-- TECH STACK SECTION — Animated glowing technology cards         -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-```aura width=860 height=300
+```aura width=860 height=360
 <div style={{
   width: '100%', height: '100%', background: '#06060a',
   display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
@@ -164,9 +164,14 @@
     #tsp13 { animation: ts-pulse 3s ease-in-out infinite 1.7s; }
     #tsp14 { animation: ts-pulse 3s ease-in-out infinite 2.2s; }
     #tsp15 { animation: ts-pulse 3s ease-in-out infinite 0.4s; }
+    #tsp16 { animation: ts-pulse 3s ease-in-out infinite 0.9s; }
+    #tsp17 { animation: ts-pulse 3s ease-in-out infinite 1.4s; }
+    #tsp18 { animation: ts-pulse 3s ease-in-out infinite 1.9s; }
+    #tsp19 { animation: ts-pulse 3s ease-in-out infinite 0.6s; }
+    #tsp20 { animation: ts-pulse 3s ease-in-out infinite 1.1s; }
   `}</style>
 
-  <svg width="860" height="300" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="360" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
       <radialGradient id="tsg1" cx="50%" cy="50%" r="50%">
         <stop offset="0%" stopColor="rgba(139,92,246,0.35)" />
@@ -181,9 +186,9 @@
         <stop offset="100%" stopColor="rgba(51,102,255,0)" />
       </radialGradient>
     </defs>
-    <ellipse id="tso1" cx="150" cy="220" rx="200" ry="160" fill="url(#tsg1)" />
-    <ellipse id="tso2" cx="700" cy="50"  rx="180" ry="140" fill="url(#tsg2)" />
-    <ellipse id="tso3" cx="430" cy="240" rx="160" ry="120" fill="url(#tsg3)" />
+    <ellipse id="tso1" cx="150" cy="270" rx="200" ry="160" fill="url(#tsg1)" />
+    <ellipse id="tso2" cx="700" cy="60"  rx="180" ry="140" fill="url(#tsg2)" />
+    <ellipse id="tso3" cx="430" cy="300" rx="160" ry="120" fill="url(#tsg3)" />
   </svg>
 
   <span style={{
@@ -208,6 +213,11 @@
       { name: 'Xcode', color: '20,124,255' },
       { name: 'Git', color: '240,80,51' },
       { name: 'Figma', color: '162,89,255' },
+      { name: 'TypeScript', color: '49,120,198' },
+      { name: 'Node.js', color: '104,159,56' },
+      { name: 'PostgreSQL', color: '51,103,145' },
+      { name: 'TypeORM', color: '253,108,33' },
+      { name: 'Docker', color: '36,150,237' },
     ].map(function(tech, i) {
       return (
         <div key={i} id={'tsp' + (i + 1)} style={{
