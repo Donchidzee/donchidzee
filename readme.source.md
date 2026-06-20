@@ -419,18 +419,62 @@
 <!-- GITHUB STATS — Cohesive themed statistics                      -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-<p align="center">
+```aura width=860 height=200
+<div style={{
+  width: '100%', height: '100%', background: '#06060a',
+  display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+  fontFamily: 'Inter, sans-serif', position: 'relative', overflow: 'hidden',
+  borderRadius: 20, border: '1px solid rgba(0,229,255,0.08)'
+}}>
 
-![](https://github-readme-stats.vercel.app/api?username=Donchidzee&show_icons=true&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b9dc3&icon_color=8b5cf6&bg_color=00000000&ring_color=00e5ff)
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Donchidzee&layout=compact&theme=transparent&hide_border=true&title_color=00e5ff&text_color=8b9dc3&bg_color=00000000)
+  <style>{`
+    @keyframes tc-orb1 { 0%, 100% { transform: translate(0,0); opacity: 0.45; } 50% { transform: translate(30px,-20px); opacity: 0.75; } }
+    @keyframes tc-orb2 { 0%, 100% { transform: translate(0,0); opacity: 0.35; } 50% { transform: translate(-25px,18px); opacity: 0.6; } }
+    @keyframes tc-ring { 0%, 100% { opacity: 0.05; } 50% { opacity: 0.14; } }
+    @keyframes tc-dot { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+    #tco1 { animation: tc-orb1 10s ease-in-out infinite; }
+    #tco2 { animation: tc-orb2 13s ease-in-out infinite 1s; }
+    #tcr1 { animation: tc-ring 8s ease-in-out infinite; }
+    #tcr2 { animation: tc-ring 8s ease-in-out infinite 2s; }
+    #tcd1 { animation: tc-dot 2.4s ease-in-out infinite; }
+    #tcd2 { animation: tc-dot 2.4s ease-in-out infinite 0.8s; }
+  `}</style>
 
-</p>
+  <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <defs>
+      <radialGradient id="tcg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(0,229,255,0.40)" />
+        <stop offset="100%" stopColor="rgba(0,229,255,0)" />
+      </radialGradient>
+      <radialGradient id="tcg2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(139,92,246,0.38)" />
+        <stop offset="100%" stopColor="rgba(139,92,246,0)" />
+      </radialGradient>
+    </defs>
+    <ellipse id="tco1" cx="180" cy="170" rx="240" ry="170" fill="url(#tcg1)" />
+    <ellipse id="tco2" cx="700" cy="40"  rx="220" ry="160" fill="url(#tcg2)" />
+    <circle id="tcr1" cx="430" cy="100" r="120" fill="none" stroke="rgba(0,229,255,0.5)" strokeWidth="0.5" />
+    <circle id="tcr2" cx="430" cy="100" r="180" fill="none" stroke="rgba(139,92,246,0.4)" strokeWidth="0.4" />
+  </svg>
 
-<p align="center">
+  <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', zIndex: 10 }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 }}>
+      <div id="tcd1" style={{ width: 6, height: 6, borderRadius: 3, background: 'rgba(0,229,255,0.9)', boxShadow: '0 0 8px rgba(0,229,255,0.6)' }} />
+      <span style={{ fontSize: 11, letterSpacing: 5, textTransform: 'uppercase', color: 'rgba(0,229,255,0.55)', fontWeight: 300 }}>total contributions</span>
+      <div id="tcd2" style={{ width: 6, height: 6, borderRadius: 3, background: 'rgba(139,92,246,0.9)', boxShadow: '0 0 8px rgba(139,92,246,0.6)' }} />
+    </div>
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=Donchidzee&theme=transparent&hide_border=true&ring=00e5ff&fire=8b5cf6&currStreakLabel=00e5ff&sideLabels=8b9dc3&currStreakNum=ffffff&sideNums=ffffff&dates=555555&stroke=1a1a2e)
+    <span style={{
+      fontSize: 66, fontWeight: 800, letterSpacing: -2, lineHeight: 1, color: '#ffffff',
+      textShadow: '0 0 50px rgba(0,229,255,0.35), 0 0 100px rgba(139,92,246,0.2)'
+    }}>1,626</span>
 
-</p>
+    <span style={{ fontSize: 13, color: 'rgba(180,190,255,0.55)', fontFamily: 'monospace', letterSpacing: 0.5, marginTop: 14 }}>
+      {'>'} Feb 23, 2019 to Present
+    </span>
+  </div>
+</div>
+```
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!-- CURRENT FOCUS — What I'm building and exploring                -->
