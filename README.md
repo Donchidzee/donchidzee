@@ -53,7 +53,7 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
 <p align="center">
-<a href="https://github.com/Donchidzee"><img src="./.github/assets/readme-aura-component-6-050a914e.svg" width="150" height="44" /></a><a href="https://www.linkedin.com/in/donchik/"><img src="./.github/assets/readme-aura-component-7-6ce9065e.svg" width="160" height="44" /></a><a href="https://daniyaryegeubay.com/"><img src="./.github/assets/readme-aura-component-8-52a088fd.svg" width="160" height="44" /></a><a href="mailto:donchik020202@gmail.com"><img src="./.github/assets/readme-aura-component-9-4f06e3cc.svg" width="120" height="44" /></a>
+<a href="https://github.com/Donchidzee"><img src="./.github/assets/readme-aura-component-6-87bf8151.svg" width="130" height="44" /></a><a href="https://www.linkedin.com/in/donchik/"><img src="./.github/assets/readme-aura-component-7-163dacc6.svg" width="140" height="44" /></a><a href="https://daniyaryegeubay.com/"><img src="./.github/assets/readme-aura-component-8-dfbb297e.svg" width="140" height="44" /></a><a href="mailto:donchik020202@gmail.com"><img src="./.github/assets/readme-aura-component-9-4f06e3cc.svg" width="120" height="44" /></a>
 </p>
 
 <!-- ═══════════════════════════════════════════════════════════════════ -->
