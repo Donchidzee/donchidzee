@@ -611,20 +611,20 @@
 />
 ```
 
-```aura width=150 height=44 link="https://apps.apple.com/app/2-words-daily/id6765884407" inline align=center
+```aura width=140 height=44 link="https://daniyaryegeubay.com/" inline align=center
 <SocialMediaButton
-  icon="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2U4ZWVmOCIgZD0iTTE2LjM2NSAxLjQzYzAgMS4xNC0uNDkzIDIuMjctMS4xNzcgMy4wOC0uNzQ0LjktMS45OSAxLjU3LTIuOTg3IDEuNTctLjEyIDAtLjIzLS4wMi0uMy0uMDMtLjAxLS4wNi0uMDQtLjIyLS4wNC0uMzkgMC0xLjE1LjU3Mi0yLjI3IDEuMjA2LTIuOTguODA0LS45NCAyLjE0Mi0xLjY0IDMuMjQ4LTEuNjguMDMuMTMuMDUuMjguMDUuNDN6bTQuNTY1IDE1LjcxYy0uMDMuMDctLjQ2MyAxLjU4LTEuNTE4IDMuMTItLjk0NSAxLjM0LTEuOTQgMi43MS0zLjQzIDIuNzEtMS41MTcgMC0xLjktLjg4LTMuNjMtLjg4LTEuNjk4IDAtMi4zMDIuOTEtMy42Ny45MS0xLjM3NyAwLTIuMzMyLTEuMjYtMy40MjgtMi44LTEuMjg3LTEuODItMi4zMjMtNC42My0yLjMyMy03LjI4IDAtNC4yOCAyLjc5Ny02LjU1IDUuNTUyLTYuNTUgMS40NDggMCAyLjY3NS45NSAzLjYuOTUuODY1IDAgMi4yMjItMS4wMSAzLjkwMi0xLjAxLjYxMyAwIDIuODg2LjA2IDQuMzc0IDIuMTktLjEzLjA3LTIuMzgzIDEuMzctMi4zODMgNC4xOSAwIDMuMjYgMi44NTQgNC40MiAyLjk1NSA0LjQ1eiIvPjwvc3ZnPg=="
-  text="App Store"
+  icon="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2U4ZWVmOCIgZD0iTTEyIDJhMTAgMTAgMCAxIDAgMCAyMCAxMCAxMCAwIDAgMCAwLTIwWm02LjkzIDZoLTIuOTVhMTUuNyAxNS43IDAgMCAwLTEuMzgtMy41NkE4LjAzIDguMDMgMCAwIDEgMTguOTMgOFpNMTIgNGMuODMgMS4yIDEuNDggMi41MyAxLjkxIDRoLTMuODJjLjQzLTEuNDcgMS4wOC0yLjggMS45MS00Wk00LjI2IDE0YTcuOTYgNy45NiAwIDAgMSAwLTRoMy4zOGExNi42IDE2LjYgMCAwIDAgMCA0SDQuMjZabS44MSAyaDIuOTVjLjM0IDEuMjcuOCAyLjQ3IDEuMzggMy41NkE4LjAzIDguMDMgMCAwIDEgNS4wNyAxNlptMi45NS04SDUuMDdhOC4wMyA4LjAzIDAgMCAxIDQuMzMtMy41NkExNS43IDE1LjcgMCAwIDAgOC4wMiA4Wk0xMiAyMGMtLjgzLTEuMi0xLjQ4LTIuNTMtMS45MS00aDMuODJjLS40MyAxLjQ3LTEuMDggMi44LTEuOTEgNFptMi4zNC02SDkuNjZhMTQuNyAxNC43IDAgMCAxIDAtNGg0LjY4YTE0LjcgMTQuNyAwIDAgMSAwIDRabS4yNiA1LjU2Yy41OC0xLjA5IDEuMDQtMi4yOSAxLjM4LTMuNTZoMi45NWE4LjAzIDguMDMgMCAwIDEtNC4zMyAzLjU2Wk0xNi4zNiAxNGExNi42IDE2LjYgMCAwIDAgMC00aDMuMzhhNy45NiA3Ljk2IDAgMCAxIDAgNGgtMy4zOFoiLz48L3N2Zz4="
+  text="Website"
   backgroundColor="#0a0a12"
   textColor="#c0c8e0"
-  width={150}
+  width={140}
   height={44}
   gradientStops={[
-    { offset: '0%', color: '#0A84FF' },
+    { offset: '0%', color: '#8b5cf6' },
     { offset: '20%', color: '#111122' },
-    { offset: '50%', color: '#00e5ff' },
+    { offset: '50%', color: '#ec4899' },
     { offset: '80%', color: '#111122' },
-    { offset: '100%', color: '#0A84FF' },
+    { offset: '100%', color: '#8b5cf6' },
   ]}
   iconSize="18"
 />
